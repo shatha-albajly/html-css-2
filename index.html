@@ -12,37 +12,48 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- header start -->
     <header>
       <nav class="navbar">
         <p class="logo">SHATHA</p>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact Us</a></li>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
         </ul>
       </nav>
-      <section class="home container">
-        <div class="introduction">
-          <div class="name">SHATHA AL-BAJLY</div>
-          <p class="job">Full Stack Developer</p>
-          <p class="intro">
-            I'm a Yemeni based web developer focused on crafting clean &
-            user‑friendly experiences, I also love problem solving. I am
-            passionate about building excellent software that improves the lives
-            of those around me.
-          </p>
+      <div class="container">
+        <div class="home" id="home">
+          <div class="left">
+            <h1 class="name">SHATHA AL-BAJLY</h1>
+            <p class="job">Full Stack Developer</p>
+            <p class="intro">
+              I'm a Yemeni based web developer focused on crafting clean &
+              user‑friendly experiences, I also love problem solving. I am
+              passionate about building excellent software that improves the
+              lives of those around me.
+            </p>
+          </div>
+          <div class="right"><img src="profile.png" alt="" /></div>
         </div>
-        <img src="profile.png" alt="" />
-      </section>
+      </div>
     </header>
+    <!-- header end -->
 
-    <section class="skills">
+    <!-- skills start -->
+
+    <section class="skills" id="skills">
       <div class="title">
         <h2>My Expertise Area</h2>
         <div class="title-line"></div>
       </div>
-      <div class="content">
+      <div class="skills-sections">
         <div class="left">
           <div class="bar">
             <div class="info">
@@ -77,41 +88,46 @@
           </div>
         </div>
         <div class="right">
-          <div class="experience-title">
-            <i class="fa fa-briefcase"></i>
-            <h3>Experiences</h3>
-          </div>
-
-          <div class="job-item">
-            <div class="the-job">Full time freelencer on freelancer</div>
-
-            <div class="time">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
-
-              <p>2020-now</p>
+          <div>
+            <div class="experience-title">
+              <i class="fa fa-briefcase"></i>
+              <h3>Experiences</h3>
             </div>
-          </div>
-          <div class="job-item">
-            <div class="the-job">Full time freelencer on upwork and fiver</div>
 
-            <div class="time">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
-
-              <p>2020-now</p>
+            <div class="job-item">
+              <div class="the-job">Full time freelencer on freelancer</div>
+              <div class="time">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <p>2020-now</p>
+              </div>
             </div>
-          </div>
-          <div class="job-item">
-            <div class="the-job">Front-end developer in WiT organization</div>
-            <div class="time">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
 
-              <p>2018-2020</p>
+            <div class="job-item">
+              <div class="the-job">
+                Full time freelencer on upwork and fiver
+              </div>
+              <div class="time">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <p>2020-now</p>
+              </div>
+            </div>
+            <div class="job-item">
+              <div class="the-job">Front-end developer in WiT organization</div>
+              <div class="time">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <p>2018-2020</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="services">
+
+    <!-- skills end -->
+
+    <!-- services start -->
+
+    <section class="services" id="services">
       <div class="container">
         <div class="title">
           <h2>Services I Offer</h2>
@@ -157,7 +173,10 @@
       </div>
     </section>
 
-    <section class="contact-us">
+    <!-- services end -->
+    <!-- contact us start -->
+
+    <section class="contact-us" id="contact-us">
       <div class="container">
         <div class="title">
           <h2>Contact Me</h2>
@@ -165,7 +184,7 @@
         </div>
 
         <div class="contact-us-sections">
-          <form class="contact-form">
+          <form class="contact-form left">
             <h3>Send Message</h3>
 
             <div class="input-box">
@@ -196,7 +215,8 @@
               <input type="submit" class="send-btn" name="" value="Send" />
             </div>
           </form>
-          <div class="contact-info">
+
+          <div class="contact-info right">
             <div class="contact-item">
               <div class="icon">
                 <i class="fa fa-phone"></i>
@@ -230,6 +250,9 @@
         </div>
       </div>
     </section>
+    <!-- contact us end -->
+
+    <!-- footer start -->
 
     <footer>
       <p>All rights reserved</p>
@@ -252,5 +275,8 @@
         </li>
       </ul>
     </footer>
+    <!-- footer end -->
+
+    <script src="scripts.js"></script>
   </body>
 </html>
