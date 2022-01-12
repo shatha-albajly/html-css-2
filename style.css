@@ -107,6 +107,27 @@ header li:hover {
 .nav-links li {
   opacity: 0;
 }
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .nav-links li:nth-child(1) {
   transition: all 0.5s ease 0.2s;
 }
@@ -371,6 +392,9 @@ li.fade {
 /* contact-us start */
 .contact-us {
   padding-top: 6rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .contact-us-sections {
   display: flex;
@@ -383,7 +407,7 @@ li.fade {
 .contact-form {
   background: #fff;
 
-  min-width: 350px;
+  min-width: 300px;
 
   padding: 3rem;
   border-radius: 10px;
@@ -435,11 +459,12 @@ li.fade {
 }
 
 .contact-info {
-  width: 45%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin-left: 2rem;
 }
 
 .contact-item {
@@ -507,11 +532,19 @@ footer li {
   .left {
     width: 45%;
   }
+
   .right {
     width: 45%;
   }
   .home {
     flex-direction: row;
+  }
+
+  .home .left {
+    animation: slideInFromLeft 1s ease-in;
+  }
+  .home .right {
+    animation: slideInFromRight 1s ease-in;
   }
   .skills-sections {
     flex-direction: row;
