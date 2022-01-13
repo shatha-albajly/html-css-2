@@ -22,6 +22,7 @@
           <li><a href="#skills">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact-us">Contact Us</a></li>
+          <label id="dark-change"></label>
         </ul>
         <div class="hamburger">
           <div class="line"></div>
@@ -41,7 +42,11 @@
               lives of those around me.
             </p>
           </div>
-          <div class="right"><img src="profile.png" alt="" /></div>
+          <!-- <button id="button">Click me!</button> -->
+
+          <div class="right" id="img-container">
+            <img id="image" src="profile.png" alt="" />
+          </div>
         </div>
       </div>
     </header>
@@ -185,31 +190,48 @@
         </div>
 
         <div class="contact-us-sections">
-          <form class="contact-form left">
+          <form class="contact-form left" id="contact-form">
             <h3>Send Message</h3>
-
-            <div class="input-box">
-              <input type="text" name="" value="" placeholder="Name" required />
-            </div>
 
             <div class="input-box">
               <input
                 type="text"
-                name=""
-                value=""
-                placeholder="Email"
-                required
+                class="name"
+                id="name"
+                placeholder="Name"
+                name="name"
               />
+              <i class="fa fa-check-circle"></i>
+              <i class="fa fa-exclamation-circle"></i>
+              <small></small>
             </div>
 
             <div class="input-box">
+              <input
+                type="email"
+                placeholder="Email"
+                id="email"
+                class="email"
+                name="email"
+              />
+              <i class="fa fa-check-circle"></i>
+              <i class="fa fa-exclamation-circle"></i>
+              <small></small>
+            </div>
+
+            <div class="input-box">
+              <lurabel for="message"></lurabel>
               <textarea
-                name="name"
                 rows="4"
                 cols="80"
                 placeholder="Message"
-                required
+                class="message"
+                id="message"
+                name="message"
               ></textarea>
+              <i class="fa fa-check-circle"></i>
+              <i class="fa fa-exclamation-circle"></i>
+              <small></small>
             </div>
 
             <div class="input-box">
